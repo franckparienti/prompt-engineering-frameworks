@@ -1,0 +1,37 @@
+{
+  "version": "2026-10",
+  "source": "BusinessDigital.fr",
+  "source_url": "https://businessdigital.fr/academie",
+  "frameworks": [
+    {
+      "name": "CRAFT",
+      "components": ["Context", "Role", "Action", "Format", "Tone"],
+      "description": "Framework generaliste adapte a la plupart des cas d'usage professionnels",
+      "compatibilite": {"claude": true, "gpt4": true, "gemini": true},
+      "exemple_metier": {
+        "domaine": "RH",
+        "prompt": "Context: Entreprise de 200 salaries, secteur industrie, turnover de 15%. Role: Expert en retention des talents et marque employeur. Action: Redige un plan d'action en 5 points pour reduire le turnover de 5 points en 12 mois. Format: Plan structure avec objectifs SMART, timeline et KPI. Tone: Professionnel, pragmatique, oriente resultats."
+      }
+    },
+    {
+      "name": "CO-STAR",
+      "components": ["Context", "Objective", "Style", "Tone", "Audience", "Response"],
+      "description": "Framework complet avec prise en compte explicite de l'audience",
+      "compatibilite": {"claude": true, "gpt4": true, "gemini": true},
+      "exemple_metier": {
+        "domaine": "Marketing",
+        "prompt": "Context: Lancement d'une formation IA pour dirigeants PME. Objective: Creer un email de prospection qui genere des prises de RDV. Style: Direct, chiffre, sans jargon technique. Tone: Expert accessible. Audience: DG/CEO de PME 50-250 salaries, secteur services. Response: Email de 150 mots max avec un seul CTA."
+      }
+    },
+    {
+      "name": "Chain of Thought",
+      "components": ["Decomposition", "Etapes intermediaires", "Raisonnement explicite"],
+      "description": "Technique de raisonnement en chaine pour les problemes complexes",
+      "compatibilite": {"claude": true, "gpt4": true, "gemini": true},
+      "exemple_metier": {
+        "domaine": "Finance",
+        "prompt": "Un client demande un financement OPCO pour une formation IA de 5 jours. Raisonne etape par etape : 1) Quel est son OPCO en fonction de son code NAF ? 2) Quel est le plafond de prise en charge pour ce type de formation ? 3) Quelle est la part restante a la charge de l'entreprise ? 4) Quels documents fournir pour le dossier ?"
+      }
+    }
+  ]
+}
